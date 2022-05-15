@@ -14,7 +14,7 @@
 }
 
 .team-item {
-flex-basis: calc((100%-120px)/4);
+flex-basis: calc((100% - 120px)/4);
 margin-left: 30px;
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -61,11 +61,12 @@ display: flex;
     fill: #AFB1B8;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: all;
-}
-.team-soc-link:hover, .team-soc-link:focus {
+    &:hover, &:focus {
     background-color: var(--acent-color);
     fill: #FFFFFF;
 }
+}
+
 .team-soc-item:not(:last-child) {
     margin-right: 10px;  
     }

@@ -40,9 +40,10 @@ margin: 0 auto;
     background-color: var(--acent-color);
     margin: 0 auto;
     display: block;
-}
-
-.hero-btn:hover, .hero-btn:focus {
+    &:hover, &:focus {
     color: #FFFFFF;
     background-color : var(--acent-color);
 }
+}
+
+
