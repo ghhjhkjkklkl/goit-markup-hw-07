@@ -1,20 +1,13 @@
 .logo {
     font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+     @include font (26px, 1.19, 700, 0.03em);
     color: #212121;  
     margin-right: 93px;  
   }
   .footer-logo {
       
 font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
+ @include font (26px, 1.19, 700, 0.03em);
 color: #FFFFFF;
   }
   .logo--color {

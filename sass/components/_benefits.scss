@@ -5,17 +5,15 @@
     display: flex;  
 }
 .benefits-item {
-    display: flex;
-    align-items: center;
+    @extend %align-items;
 }
 .benefits-list-link{
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @extend %align-items;
     margin-bottom: 30px;
 }
 
@@ -25,10 +23,8 @@
 }
 
 .benefits-title {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
+@include font (14px, 1.14, 700, 0.03em);
+
 text-transform: uppercase;
 color:#212121;
 margin-bottom: 10px;
@@ -36,9 +32,6 @@ margin-bottom: 10px;
 
 .benefits-text {
 width: 270px; 
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+@include font (14px, 1.14, 700, 0.03em);
 color: var(--text-color);
 }

@@ -33,9 +33,7 @@ transition-property: all;
     background-color : #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+@extend %align-items;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 &:hover, &:focus + .button-close-icon{
 fill: var(--acent-color);
@@ -49,11 +47,7 @@ fill: var(--acent-color);
 
 }
 .modal-title {
-    font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-letter-spacing: 0.03em;
+     @include font (20px, 1.15, 700, 0.03em);
 color: #212121;
 text-align: center;
 margin-bottom: 12px;
@@ -77,11 +71,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  margin-bottom: 10px;   
 }
 .modal-lebel {
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
+     @include font (12px, 1.17, 400, 0.01em);
 color: #757575;
 display: block;
 margin-bottom: 4px;
@@ -97,11 +87,7 @@ border-radius: 4px;
 resize: none;
 outline: none;
 &::placeholder  {
-    font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.01em;
+     @include font (14px, 1.14, 400, 0.01em);
 color: rgba(117, 117, 117, 0.5);
 }
 }
@@ -117,26 +103,17 @@ color: rgba(117, 117, 117, 0.5);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    @extend %align-items;
     margin-bottom: 30px;
 }
 .check-text {
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+     @include font (14px, 1.71, 400, 0.03em);
 color: #757575;
-display: flex;
-align-items: center;
+@extend %align-items;
  span {
     width: 16px;
     height: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align-items;
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 8.38px;
@@ -169,12 +146,8 @@ border-radius: 4px;
 border: none;
 
 font-family: inherit;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
+ @include font (16px, 1.88, 700, 0.06em);
 text-align: center;
-letter-spacing: 0.06em;
 color: #FFFFFF;
 display: block;
 margin: 0 auto;

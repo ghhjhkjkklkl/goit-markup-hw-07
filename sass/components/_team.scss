@@ -5,8 +5,8 @@
 }
 .team-title {
     margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+    @extend %align-items;
+
 }
 .team-list {
     display: flex;
@@ -22,32 +22,23 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-name {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.19;
-letter-spacing: 0.03em;
+     @include font (16px, 1.19, 500, 0.03em);
 color: #212121;
 margin-bottom: 10px;
-display: flex;
-    justify-content: center;
+@extend %align-items;
 }
 
 .team-list-profession {
-    font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-letter-spacing: 0.03em;
+     @include font (16px, 1.19, 400, 0.03em);
 color: var(--text-color);
-display: flex;
-    justify-content: center;
+@extend %align-items;
 }
 .team-list-group {
     padding-top: 30px;
     margin-bottom: 16px;
 }
 .team-soc-list {
-    display: flex;
-    justify-content: center;
+    @extend %align-items;
     padding-bottom: 30px;
 }
 .team-soc-link {
@@ -55,9 +46,7 @@ display: flex;
     height: 44px;
     background-color: #FFFFFF;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align-items;
     fill: #AFB1B8;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: all;
